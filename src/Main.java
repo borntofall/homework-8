@@ -56,13 +56,12 @@ public class Main {
 
         System.out.println("Task 4");
 
-        for (int index = 0; index <= numbers.length; index++) {
-            if (numbers[index] % 2 == 1) {
-                numbers[index] = numbers[index] + 1;
+        for (int index = 0; index < numbers.length; index++) {
+            if (numbers[index] % 2 != 0) {
+                numbers[index]++;
             }
-            System.out.println(Arrays.toString(numbers));
-            break;
         }
+        System.out.print(Arrays.toString(numbers));
 
 
     }
